@@ -15,7 +15,7 @@ Resources:
             Events:
                  Type: Schedule
                  Properties:
-                    Schedule: (0 7 * * ? *)
+                    Schedule: cron(0 7 * * ? *)
 
     wotdSkill:
         Type: AWS::Serverless::Function
