@@ -30,7 +30,7 @@ Resources:
         Type: AWS::Serverless::SimpleTable
             PrimaryKey:
                 Name: word
-                Type: string
+                Type: String
             ProvisionedThroughput:
                 ReadCapacityUnits: 5
                 WriteCapacityUnits: 5
