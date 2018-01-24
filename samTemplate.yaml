@@ -21,7 +21,7 @@ Resources:
         Type: AWS::Serverless::Function
         Properties:
             Handler: wotd-skill.lambda_handler
-            CodeUri: ./wotd-skill/wotd-skill.py
+            CodeUri: ./wotd-skill/wotd_skill.py
             Events:
                 AlexaSkillEvent:
                     Type:AlexaSkill
