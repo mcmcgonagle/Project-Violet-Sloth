@@ -12,10 +12,6 @@ Resources:
             Role: arn:aws:iam::907740290096:role/service-role/Admin
             Handler: wotd-grabber.lambda_handler
             CodeUri: ./wotd-grabber/wotd-grabber/
-            Events:
-                 Type: Schedule
-                 Properties:
-                    Schedule: cron(0 7 * * ? *)
 
     wotdSkill:
         Type: AWS::Serverless::Function
