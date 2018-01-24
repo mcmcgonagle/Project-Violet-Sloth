@@ -11,18 +11,13 @@ Resources:
         Properties:
             Role: arn:aws:iam::907740290096:role/service-role/Admin
             Handler: wotd-grabber.lambda_handler
-            CodeUri: ./wotd-grabber/wotd-grabber/
-
+            CodeUri: ./wotd-grabber/wotd-grabber/           
     wotdSkill:
         Type: AWS::Serverless::Function
         Properties:
             Role: arn:aws:iam::907740290096:role/service-role/Admin
             Handler: wotd_skill.lambda_handler
             CodeUri: ./wotd-skill/wotd_skill.py
-            Events:
-                AlexaSkillEvent:
-                    Type:AlexaSkill
-
     wotdTestTable:
         Type: AWS::Serverless::SimpleTable
         Properties:
