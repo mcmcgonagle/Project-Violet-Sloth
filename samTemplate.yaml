@@ -11,7 +11,7 @@ Resources:
         Type: AWS::Serverless::Function
         Properties:
             Handler: wotd-grabber.lambda_handler
-            CodeUri: ./auto-dep/wotd-grabber/wotd-grabber
+            CodeUri: https://github.com/mcmcgonagle/Project-Violet-Sloth/tree/auto-dep/wotd-grabber/wotd-grabber
             Events:
                  Type: Schedule
                  Properties:
@@ -21,7 +21,7 @@ Resources:
         Type: AWS::Serverless::Function
         Properties:
             Handler: wotd-skill.lambda_handler
-            CodeUri: ./auto-dep/wotd-skill/wotd-skill.py
+            CodeUri: https://github.com/mcmcgonagle/Project-Violet-Sloth/tree/auto-dep/wotd-skill/wotd-skill.py
             Events:
                 AlexaSkillEvent:
                     Type:AlexaSkill
