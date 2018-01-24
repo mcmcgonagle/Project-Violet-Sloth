@@ -11,7 +11,7 @@ Resources:
         Type: AWS::Serverless::Function
         Properties:
             Handler: wotd-grabber.lambda_handler
-            CodeUri: ./wotd-grabber/wotd-grabber.zip
+            CodeUri: ./wotd-grabber/wotd-grabber/
             Events:
                  Type: Schedule
                  Properties:
