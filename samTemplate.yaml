@@ -5,7 +5,7 @@ Globals:
   Function:
     Runtime: python3.6
     Timeout: 180
-    Role: arn:aws:iam::037083514056:role/alexaSkill
+    Role: arn:aws:iam::907740290096:role/service-role/Admin
 Resources:
     wotd-grabber:
         Type: AWS::Serverless::Function
@@ -19,12 +19,12 @@ Resources:
 
     wotd-skill:
         Type: AWS::Serverless::Function
-            Properties:
-                Handler: wotd-skill.lambda_handler
-                CodeUri: ./auto-dep/wotd-skill/wotd-skill.py
-                Events:
-                    AlexaSkillEvent:
-                        Type:AlexaSkill
+        Properties:
+            Handler: wotd-skill.lambda_handler
+            CodeUri: ./auto-dep/wotd-skill/wotd-skill.py
+            Events:
+                AlexaSkillEvent:
+                    Type:AlexaSkill
 
     WOTD-Test-Table:
         Type: AWS::Serverless::SimpleTable
