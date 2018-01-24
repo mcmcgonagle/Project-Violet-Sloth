@@ -10,8 +10,8 @@ Resources:
     wotd-grabber:
         Type: AWS::Serverless::Function
         Properties:
-            Handler: wotd-grabber.lambda_handler
-            CodeUri: ./wotd-grabber/wotd-grabber.zip
+            Handler: wotd-skill.lambda_handler
+            CodeUri: ./wotd-skill/wotd-skill.py
             Events:
                  Type: Schedule
                  Properties:
@@ -20,8 +20,8 @@ Resources:
     wotd-skill:
         Type: AWS::Serverless::Function
         Properties:
-            Handler: wotd-grabber.lambda_handler
-            CodeUri: ./wotd-grabber/wotd-grabber.zip
+            Handler: wotd-skill.lambda_handler
+            CodeUri: ./wotd-skill/wotd-skill.py
             Events:
                 AlexaSkillEvent:
                     Type:AlexaSkill
