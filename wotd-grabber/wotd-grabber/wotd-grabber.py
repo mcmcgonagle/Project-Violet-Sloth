@@ -5,7 +5,7 @@ from datetime import datetime, date
 
 #Establish connection to Database
 wotdDB = boto3.client('dynamodb')
-
+#Testing Auto deployment
 #Lambda Handler function
 def lambda_handler(event, context):
 	languages = [{"language":"spanish", "link":"https://wotd.transparent.com/rss/es-widget.xml"},{"language":"chinese", "link":"https://wotd.transparent.com/rss/zh-widget.xml"}]
