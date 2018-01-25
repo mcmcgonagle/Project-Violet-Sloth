@@ -17,7 +17,7 @@ Resources:
         Properties:
             Role: arn:aws:iam::907740290096:role/service-role/Admin
             Handler: wotd_skill.lambda_handler
-            CodeUri: ./wotd-skill/wotd_skill.py
+            CodeUri: ./wotd-skill/
     wotdTestTable:
         Type: AWS::Serverless::SimpleTable
         Properties:
